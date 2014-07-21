@@ -1,0 +1,19 @@
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+    <title>Search</title>
+</head>
+<body>
+    <form action="/search/" method="POST"  align="center" >
+        <input type="text" name="bookename" size="40"  maxlength="255">
+        <input type="submit"  value="给我搜！">
+    </form>
+	<form name="form_google" id="form_google" method="get" action="http://www.google.com/custom" target="google_window"> 
+		<label for="sbi" style="display: none">Enter the key words</label>
+		<input type="text" name="text" size="31" maxlength="255" value="" id="sbi" ></input>
+		<label for="sbb" style="display: none">Search</label>
+		<input type="submit" name="submit" id="sbb"></input>
+	</form> 
+</body>
+</html>
+

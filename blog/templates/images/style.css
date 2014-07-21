@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* DIVCSS5 www.divcss5.com 请保留以便售后维护与服务 */
+body, div,form, input, button, select, textarea {margin:0; padding:0;font-style: normal;font:12px/22px "\5B8B\4F53",Arial, Helvetica, sans-serif;}
+ol, ul ,li{list-style: none;}
+img {border: 0; vertical-align:middle;}
+body{color:#000000;background:#FFF; text-align:center;}
+.clear{clear:both;height:1px;width:100%; overflow:hidden; margin-top:-1px;}
+a{color:#000000;text-decoration:none; } 
+a:hover{color:#BA2636;text-decoration:underline; border:0}
+#n{margin:10px auto; width:920px; border:1px solid #CCC;font-size:12px; line-height:30px;}
+#n a{ padding:0 4px; color:#333}
+
+#search-box{width:326px;height:35px;background:url(divcss5-so-bg.gif) no-repeat 0 0; margin:0 auto}
+.input-box{ float:left; width:240px; height:30px; line-height:29px; padding-left:1px; border:0; background:none; text-align:left; font-size:14px}
+.button{ float:right; border:0; background:none; text-indent:-999px; width:70px; height:29px; cursor:pointer}

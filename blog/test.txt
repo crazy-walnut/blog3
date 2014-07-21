@@ -1,0 +1,6 @@
+book=models.CharField(max_length=)
+class User(models.Model):
+	name = models.CharField(max_length = 30,verbose_name='e-mail')
+	phone_num = models.IntegerField(max_length=validators[validate_slug])
+	email=models.CharField(max_length=validators[validate_email])
+	headImg = models.FileField(upload_to = './upload/')

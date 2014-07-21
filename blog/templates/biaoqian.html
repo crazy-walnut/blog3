@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-cn">
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="NPP-Plugin">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+ </head>
+ <body>
+	{% if user %}
+		<li>name : {{user.name}} </li>
+	{% else %}
+		用户不存在
+	{% endif %}
+	<form  method ='POST' enctype="multipart/form-data">
+		{{uf.as_p}}
+        <input  type ="text" name="username"/>
+		<input  type="submit" value="OK"/>
+	</form>
+	<ol>
+	{% for book in book_list %}
+		<li>{{book}}</li>
+	{% endfor %}
+	</ol>
+	<ol>
+	{% for k,v in user.items %}		<!--方法转化><-->
+		<li>{{k}}:{{v}}</li>
+	{% endfor %}
+	</ol>
+	<form action="/contact/" method="post">
+    {{ form.non_field_errors }}
+    <div class="fieldWrapper">
+        {{ form.subject.errors }}
+        <label for="id_subject">Email subject:</label>
+        {{ form.subject }}
+    </div>
+    <div class="fieldWrapper">
+        {{ form.message.errors }}
+        <label for="id_message">Your message:</label>
+        {{ form.message }}
+    </div>
+    <div class="fieldWrapper">
+        {{ form.sender.errors }}
+        <label for="id_sender">Your email address:</label>
+        {{ form.sender }}
+    </div>
+    <div class="fieldWrapper">
+        {{ form.cc_myself.errors }}
+        <label for="id_cc_myself">CC yourself?</label>
+        {{ form.cc_myself }}
+    </div>
+    <p><input type="submit" value="Send message" /></p>
+</form>
+
+ </body>
+</html>
